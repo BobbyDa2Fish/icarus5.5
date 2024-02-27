@@ -1,5 +1,6 @@
 const Discord = require("discord.js"),
   { escapeMarkdown } = require('discord.js'),
+  get = require("./get"),
   sf = require("../config/snowflakes.json"),
   // TESTING SNOWFLAKES NEED TO BE DOUBLE CHECKED
   // not sure if all are updated
@@ -194,6 +195,8 @@ const utils = {
       return collected.first();
     }
   },
+
+  get,
   /**
    * Shortcut to nanoid. See docs there for reference.
    */
